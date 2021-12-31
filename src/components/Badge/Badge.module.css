@@ -1,0 +1,16 @@
+.count_cicle {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  line-height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  top: 2px;
+  right: -15px;
+  font-size: 10px;
+  font-weight: 800;
+  background-color: rgb(250, 235, 215, 0.05);
+  color: black;
+  user-select: none;
+  z-index: 10;
+}

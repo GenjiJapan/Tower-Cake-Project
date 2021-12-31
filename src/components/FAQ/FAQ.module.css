@@ -1,0 +1,15 @@
+.faq {
+  position: relative;
+  margin: 3.125em auto;
+  width: 1140px;
+  /* height: 800px; */
+  /* background: #000; */
+}
+
+.faq_container {
+  position: relative;
+  margin: 1em auto;
+  width: 1120px;
+  /* height: 1090px; */
+  /* background: red; */
+}

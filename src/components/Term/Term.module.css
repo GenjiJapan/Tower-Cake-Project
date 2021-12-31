@@ -1,0 +1,24 @@
+.term{
+    position: relative;
+     width: 100%;
+     margin-bottom: 1em;
+    background: rgb(245, 245, 245);
+}
+
+.term_title{
+    margin: 1em auto;
+    width: 90%;
+    text-align: left;
+    font-weight: 600;
+}
+
+.terms_h1{
+    color: #c0392b;
+}
+
+.and_h1{
+    color: #eb3b5a;
+}
+.rules_h1{
+    color: #ff7979;
+}

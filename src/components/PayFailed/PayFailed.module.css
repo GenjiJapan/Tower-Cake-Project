@@ -1,0 +1,99 @@
+
+.Pay_Fail{
+    width: 100%;
+    height: 760px;
+    background-color: rgba(153, 153, 153, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.Pay_Fail_tag{
+    width: 35%;
+    height: 40%;
+    margin-top: 3%;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tag_header{
+    width: 100%;
+    height: 30%;
+    background-color: #e74c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag_header_circle{
+    width: 12%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag_header_circle i{
+    color: #e74c3c;
+}
+
+.tag_body{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tag_body_header{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    /* background-color: red; */
+}
+
+.tag_body_content{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    /* background-color: aqua; */
+}
+
+.tag_body_btn{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.tag_body_btn button{
+    width: 30%;
+    height: 70%;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px solid #e74c3c;
+    border-radius: 20px;
+    color: #e74c3c;
+    transition: ease-in-out 0.3s;
+}
+
+.tag_body_btn button:hover{
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+
+

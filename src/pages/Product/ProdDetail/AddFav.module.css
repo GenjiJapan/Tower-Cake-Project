@@ -1,0 +1,85 @@
+.wrapper {
+  position: relative;
+  width: 260px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1em;
+  /* background: #000; */
+}
+
+.wrapper input[type="checkbox"] {
+  transition: all 0.5s ease-in-out 0s;
+  left: 0em;
+  top: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.wrapper input[type="checkbox"] + label[for] .do,
+.wrapper input[type="checkbox"] + label[for] .done {
+  position: absolute;
+  left: 2.1em;
+  top: 0.2em;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"] + label[for] .done,
+.wrapper input[type="checkbox"]:checked + label[for] .do {
+  display: none;
+}
+.wrapper input[type="checkbox"] + label[for] .do,
+.wrapper input[type="checkbox"]:checked + label[for] .done {
+  display: block;
+}
+
+.wrapper input[type="checkbox"]:before,
+.wrapper input[type="checkbox"]:after {
+  content: "";
+  cursor: pointer;
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png);
+  background-size: cover;
+  /* background-position: center; */
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+
+  transition: all 0.5s ease-in-out 0s;
+
+  filter: grayscale(100%);
+}
+
+.wrapper input[type="checkbox"]:after {
+  opacity: 0;
+
+  filter: grayscale(0%);
+}
+
+.wrapper input[type="checkbox"]:checked:before {
+  filter: grayscale(0%);
+}
+
+.wrapper input[type="checkbox"]:checked:after {
+  animation: ascend 0.65s cubic-bezier(0.43, 0.5, 1, 1);
+}
+
+@keyframes ascend {
+  0% {
+    transform: scale(1, 1);
+    /* opacity: 1; */
+  }
+  50% {
+    transform: scale(2, 2);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(6, 6);
+    opacity: 0;
+  }
+}

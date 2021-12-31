@@ -1,0 +1,147 @@
+//     const [username, setUsername] = useState("");
+//   const [password, setPassword] = useState("");
+
+//   const [email, setEmail] = useState("");
+//   const [confirmPass, setConfirmPass] = useState("");
+
+  // const btnSubmit = () => {
+  //   setNotify({
+  //     isOpen: true,
+  //     message: "Submitted Successfully",
+  //     type: "success",
+  //   });
+  // };
+  // console.log("notify is : ", notify);
+  
+  // const { name, value, onChange, onBlur } = field;
+//   const [isAgree, setIsAgree] = useState(false);
+//   const [isOpen, setIsOpen] = useState(false);
+  
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+    // setNotify({
+    //   isOpen: true,
+    //   message: "Submitted Successfully",
+    //   type: "success",
+    // });
+    // const config = {
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     "Content-Length": JSON.stringify({
+    //       Username: username,
+    //       Password: password,
+    //       Email: email,
+    //       ConfirmPassword: confirmPass,
+    //       IsAgree: isAgree,
+    //     }).length,
+    //   },
+    // };
+    // if (validForm() !== "Success") return alert(validForm());
+    // try {
+    //   const res = await axios.post(
+    //     "/register/create",
+    //     {
+    //       Username: username,
+    //       Password: password,
+    //       Email: email,
+    //       ConfirmPassword: confirmPass,
+    //       IsAgree: isAgree,
+    //     },
+    //     config
+    //   );
+    //   console.log("res là : ", res.data);
+    // } catch (error) {
+    //   console.log(error.response.data);
+    //   console.log(error.response.status);
+    //   console.log(error.response.headers);
+    // }
+//   };
+  // const validForm = () => {
+  //   if (!username || username.length < 5) return "Username is not valid";
+
+  //   if (!password || password.length < 5) return "Password is not valid";
+
+  //   if (!email || email.length > 50 || email.length < 10)
+  //     return "Email is not valid";
+
+  //   if (confirmPass !== password) return "Password is not confirm";
+
+  //   if (!isAgree) return "Please agree the policy";
+
+  //   return "Success";
+  // };
+
+
+
+                    //   Yup and Formik
+
+//     const formik = useFormik({
+//     initialValues: {
+//       Username: "",
+//       Email: "",
+//       Password: "",
+//       ConfirmPassword: "",
+//       IsAgree: false,
+//     },
+//     validationSchema: Yup.object({
+//       Username: Yup.string()
+//         .max(30, "Must be 30 character or less")
+//         .required("Required"),
+//       Password: Yup.string()
+//         .max(30, "Must be 30 character or less")
+//         .required("Required"),
+//       Email: Yup.string().email("Invalid email address").required("Required"),
+//       IsAgree: Yup.boolean()
+//         .required("Required")
+//         .oneOf([true], "You must accept the terms and conditions."),
+//     }),
+//     onSubmit: (values) => {
+//       alert(JSON.stringify(values, null, 2));
+//     },
+//   });
+
+// {/* <input
+//                 type="text"
+//                 name="Username"
+//                 onChange={formik.handleChange}
+//                 onBlur={formik.handleBlur}
+//                 value={formik.values.Username}
+//                 // onChange={(e) => setUsername(e.target.value)}
+//                 placeholder="Username"
+//               />
+//               {formik.touched.Username && formik.errors.Username ? (
+//                 <div>{formik.errors.Username} </div>
+//               ) : null}
+
+//               <input
+//                 type="email"
+//                 name="Email"
+//                 onChange={formik.handleChange}
+//                 onBlur={formik.handleBlur}
+//                 value={formik.values.Email}
+//                 // onChange={(e) => setEmail(e.target.value)}
+//                 placeholder="Email Address"
+//               />
+//               {formik.touched.Email && formik.errors.Email ? (
+//                 <div>{formik.errors.Email} </div>
+//               ) : null}
+
+//               <input
+//                 type="password"
+//                 name="Password"
+//                 onChange={formik.handleChange}
+//                 onBlur={formik.handleBlur}
+//                 value={formik.values.Password}
+//                 // onChange={(e) => setPassword(e.target.value)}
+//                 placeholder="Create Password"
+//               />
+//               {formik.touched.Password && formik.errors.Password ? (
+//                 <div>{formik.errors.Password} </div>
+//               ) : null}
+
+//               <input
+//                 type="password"
+//                 name="ConfirmPassword"
+//                 onChange={(e) => setConfirmPass(e.target.value)}
+//                 placeholder="Confirm Password"
+//               /> */}

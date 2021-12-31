@@ -1,0 +1,101 @@
+.help{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.header span{
+    font-size: 20px;
+}
+
+.body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    width: 70%;
+    background-color: rgba(248, 194, 145, 0.08);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.item{
+
+}
+
+.item_option{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.item_option span{
+    font-size: 12px;
+    color: #666;
+}
+
+.item_option .options_label{
+    border-radius: 5px;
+
+}
+
+.item_email{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.item_email span{
+    font-size: 12px;
+    color: #666;
+}
+
+.item_email input{
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 0.8px solid;
+}
+
+.item_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.item_content span{
+    font-size: 12px;
+    color: #666;
+}
+
+.item_content textarea{
+    border-radius: 5px;
+    border: 0.8px solid;
+    text-transform: capitalize;
+}
+
+.send{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.send_btn{
+    width: 140px;
+    height: 40px;
+    background-color: #000;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff;
+}

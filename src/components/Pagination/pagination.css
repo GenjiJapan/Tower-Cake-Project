@@ -1,0 +1,11 @@
+.pagination {
+  position: relative;
+  /* background: #000; */
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

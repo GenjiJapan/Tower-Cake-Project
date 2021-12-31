@@ -1,0 +1,14 @@
+useEffect(() => {
+    (async () => {
+      try {
+        const response = await axios.get(
+          `https://json-api-collection.herokuapp.com/bestseller/products/1`
+        );
+        setProductList(response);
+        console.log(response);
+      } catch (error) {
+        console.log("Failed to fetch Food List :", error.message);
+      }
+    })();
+    
+  }, []);

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.space_top_gallery {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+
+.gallery {
+  width: 100%;
+  height: 760px;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end;
+}
+
+.gallery_border {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery_border_bg {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery_border_bg_img {
+  width: calc(100% / 3);
+  height: 100%;
+  object-fit: cover;
+  float: left;
+  user-select: none;
+}
+
+.gallery_border_tag {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery_border_tag_link {
+  font-family: "Great Vibes", cursive;
+  font-size: 53px;
+  color: #000;
+  text-decoration: none;
+  user-select: none;
+}
+
+.gallery_border_tag_link:hover,
+.gallery_border_tag_link:focus {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery_border_bg{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery_border_bg_img{
+    width: 100%;
+    height: calc(100% / 3);
+  }
+}

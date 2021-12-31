@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Dynalight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.space_top_our_cake {
+  width: 100%;
+  height: 160px;
+  background-color: transparent;
+}
+
+.our_cake {
+  position: relative;
+  width: auto;
+  height: 750px;
+  background-image: linear-gradient(#ffeaa7, #fff);
+  align-items: center;
+  justify-content: center;
+}
+
+.our_cake_header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our_cake_header_content {
+  font-family: "Dynalight", cursive;
+  font-size: 50px;
+  margin-top: 50px;
+  user-select: none;
+}
+
+.our_cake_bg_border {
+  position: relative;
+  height: 84%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our_cake_bg {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  background-image: url(../../../assets/images/cai_thot.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+}
+
+.our_cake_bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 572px 0 0 black;
+  top: 20px;
+  left: 21px;
+}
+
+.our_cake_bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 572px 0 0 black;
+  top: 20px;
+  right: 21px;
+}
+
+.our_cake_item_border {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 450px;
+  top: 0;
+}
+
+.our_cake_item {
+  position: relative;
+  width: 300px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px #888;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.our_cake_item_img_border {
+  position: relative;
+  /* border: 1px solid red; */
+  height: 60%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.our_cake_item_img {
+  /* border-radius: 5px;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+.our_cake_item_rate {
+  width: 140px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 240px;
+  left: 10px;
+  background-color: #fff;
+  justify-content: space-around;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.our_cake_item_rate i {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #fdd43c;
+  font-weight: 600;
+}
+
+.our_cake_item_name {
+  font-family: "Dynalight", cursive;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 40px;
+  font-weight: 500;
+  padding-left: 15px;
+  user-select: none;
+}
+
+.our_cake_item_size {
+  font-family: "Great Vibes", cursive;
+  font-size: 25px;
+  text-align: right;
+  padding-right: 20px;
+  user-select: none;
+}
+
+.our_cake_item_price_and_buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+  user-select: none;
+}
+
+.our_cake_item_price {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+}
+
+.our_cake_item_buy {
+  font-size: 28px;
+  color: #92d767;
+  cursor: pointer;
+}
+
+.our_cake_item_love_border {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: background-color ease-in 0.3s;
+}
+
+.our_cake_item_love {
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.our_cake_item_love_border:hover {
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.our_cake_item_discover {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 48px;
+  user-select: none;
+}
+
+.our_cake_item_discover button {
+  width: 120px;
+  height: 32px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.btn {
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 45px;
+  position: relative;
+  top: -1em;
+  width: 100%;
+  border: none;
+  font-family: "Krona One", sans-serif;
+}
+
+.btn:focus {
+  outline: none !important;
+}
+
+.btn_1 {
+  background: darken(#e1332d, 1.5%);
+  background: transparent;
+  font-weight: 100;
+}
+
+.btn_1 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.btn_1 rect {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.btn_1:hover {
+  letter-spacing: 1px;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn_1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 250;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Our cake's carousel */
+
+.our_cake_carousel {
+  margin-top: 80px;
+  width: 80%;
+  height: 450px;
+}
+
+/* Line and btn */
+
+.our_cake_line {
+  position: absolute;
+  width: 95%;
+  border-top: 3px solid #000;
+  bottom: 50px;
+}
+
+.open_product {
+  /* height: inherit; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our_cake_all_btn {
+  position: absolute;
+  bottom: 10px;
+  right: 136px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  user-select: none;
+  letter-spacing: 0.1em;
+  color: #000;
+  font-weight: 600;
+}
+.our_cake_all_btn:hover {
+  color: #000;
+}
+
+.arrow {
+  /* transition: margin-left 0.5s ease; */
+  margin-left: 0.5em;
+  letter-spacing: 0em;
+}
+
+.our_cake_all_btn:hover {
+  /* color: transparent; */
+  /* background: linear-gradient(
+    315deg,
+    rgb(236, 160, 255),
+    rgb(170, 178, 255),
+    rgb(132, 255, 201)
+  ); */
+  transition: all 0.5s ease-in-out 0s;
+  background-clip: text;
+}
+
+.our_cake_all_btn:hover .arrow {
+  /* margin-left: 0.5em; */
+  color: #000;
+  animation: bounce 8s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  5% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(40px);
+  }
+  12.5% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(10px);
+  }
+  20%,
+  25% {
+    transform: translateX(0);
+  }
+
+  25%,
+  30% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(40px);
+  }
+  37.5% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  45%,
+  50% {
+    transform: translateX(0);
+  }
+
+  50%,
+  55% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(40px);
+  }
+  62.5% {
+    transform: translateX(0);
+  }
+  65% {
+    transform: translateX(10px);
+  }
+  70%,
+  75% {
+    transform: translateX(0);
+  }
+
+  75%,
+  80% {
+    transform: translateX(0);
+  }
+  85% {
+    transform: translateX(40px);
+  }
+  87.5% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(10px);
+  }
+  95%,
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our_cake_item {
+    height: 400px;
+    /* background: #000; */
+    margin: 0 1em;
+  }
+  .our_cake_bg {
+    /* background: #000; */
+    background-size: 100% 100%;
+  }
+  .our_cake_item_img_border {
+    height: 50%;
+  }
+  .our_cake_item_rate {
+    width: 120px;
+    height: 25px;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .our_cake_item_rate i {
+    font-size: 15px;
+  }
+  .our_cake_item_name {
+    font-size: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .our_cake_item_size {
+    margin-top: 1.8em;
+    font-size: 22px;
+  }
+  .our_cake_item_price {
+    font-size: 13px;
+  }
+  .our_cake_item_buy {
+    font-size: 20px;
+  }
+  .our_cake_item_discover button {
+    width: 100px;
+    height: 10px;
+  }
+  .btn {
+    font-size: 10px;
+    top: -3.5em;
+  }
+  .btn_1:hover rect {
+    stroke-dasharray: 15, 220;
+  }
+  .our_cake_all_btn {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+  }
+  .our_cake_item_love_border {
+    width: 30px;
+    height: 30px;
+  }
+  .our_cake_item_love {
+    font-size: 15px;
+  }
+}
+
+.isLoading {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  width: 100%;
+  height: 500px;
+
+  /* background: red; */
+}
+
+
+
+.logo {
+  position: absolute;
+  /* left: 50%;
+  transform: ; */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

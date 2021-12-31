@@ -1,0 +1,668 @@
+
+
+.accountMGM{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.mgm_bar{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    /* border-bottom: 1px solid ; */
+    display: flex;
+    align-items: center;
+}
+
+.mgm_bar i{
+    color: #fffa65;
+}
+
+.mid_line{
+    position: absolute;
+    width: 80%;
+    height: 4%;
+    background-color: #fffa65;
+    left: 2%;
+}
+
+.mgm_bar_tag{
+    position: relative;
+    width: 15%;
+    height: 50%;
+    margin-left: 10%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+}   
+
+.tag_1{
+    background-color: #1dd1a1;
+    
+}
+
+.tag_2{
+    background-color: #ff7675;
+}
+
+.tag_3{
+    background-color: #636e72;
+    color: #fff;
+}
+
+.mgm_container{
+    width: 100%;
+    height: 85%;
+}
+
+
+/* ----------------List account users------------ */
+.mgm_user{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    background-color: antiquewhite;
+    /* display: none; */
+}
+
+.mgm_user_note{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    border-radius: 15px;
+    
+}
+
+.note_item{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.note_item_1{
+    color: #fff;
+}
+
+.note_item_2{
+    color: #2ecc71;
+}
+
+.note_item_3{
+    color: #f1c40f;
+}
+
+.note_item_4{
+    color: #e74c3c;
+}
+
+.user_table{
+    width: 100%;
+    height: 80%;
+    margin-top: 1%;
+    text-align: center;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #fff;
+    /* border: 1px solid blue; */
+}
+
+.user_table table{
+    width: 100%;
+    position: relative;
+    border: 1px solid #ffeaa7;
+}
+
+.user_table table td, th{
+    text-align: center;
+    padding: 1%;
+    font-weight: 600;
+    border-collapse: collapse;
+}
+
+.user_table table tr:nth-child(1){
+    background-color: #dfe6e9;
+    font-size: 17px;
+    box-shadow: 0 0 10px #999;
+}
+
+.user_table table tr:nth-child(n+2):hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.user_table table tr td i{
+    color: #74b9ff;
+}
+
+.warning_none{
+    background-color: #fff;
+}
+.warning_1{
+    background-color: #2ecc71;
+}
+.warning_2{
+    background-color: #f1c40f;
+}
+.warning_3{
+    background-color: #e74c3c;
+}
+
+.mgm_control{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfe6e9;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.mgm_control button{
+    width: 2.5%;
+    height: 60%;
+    background-color: #fff;
+    margin: 0 0.3%;
+    border-radius: 10px;
+}
+
+.mgm_control button:nth-child(1){
+    color: #FF4D4D;
+}
+
+.mgm_control button:nth-child(3){
+    color: #00A88A;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(153, 153, 153, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close_modal{
+    display: none;
+
+}
+
+.user_detail_form{
+    width: 60%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.user_detail_header{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: #74b9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_detail_header::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-top: 100px solid rgba(255, 255, 255, 0.2);
+    border-right: 100px solid transparent;
+}
+
+.user_detail_header::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 100px solid rgba(255, 255, 255, 0.2);
+      border-left: 100px solid transparent;
+}
+
+.short_info_form{
+    position: relative;
+    width: 30%;
+    height: 70%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border-radius: 15px;
+    padding-bottom: 1%;
+}
+.short_info_form span{
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.short_info_img{
+    position: absolute;
+    top: -18%;
+    width: 30%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+}
+
+.short_info_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.out_btn{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 5%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.user_detail_body{
+    width: 100%;
+    height: 80%;
+}
+
+.user_fullname,
+.user_dob_gender,
+.user_email_phone,
+.user_warning{
+    width: 100%;
+    height: 15%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_info_label{
+    width: 50%;
+    height: 80%;
+    padding: 0 2%;
+
+}
+.user_info_label span{
+    width: 100%;
+    padding: 0 2%;
+    font-weight: bold;
+    color: rgba(153, 153, 153, 0.8);
+}
+
+.user_info_label label{
+    width: 100%;
+    height: 60%;
+    background-color: rgba(248, 239, 186, 0.3);
+    border-radius: 10px;
+    padding: 3% 5%;
+    font-size: 16px;
+    
+}
+
+.user_warning{
+    height: 30%;
+    justify-content: space-between;
+}
+
+.user_warning .user_info_label:nth-child(1){
+    width: 20%;
+    /* background-color: red; */
+}
+
+.user_warning .user_info_label:nth-child(1) label{
+    width: 80%;
+    height: 30%;
+    padding: 6% 0 0 0 ;
+    text-align: center;
+}
+
+.user_warning .user_info_label:nth-child(2){
+    width: 80%;
+}
+
+.user_warning .user_info_label:nth-child(2) label{
+    width: 100%;
+    height: 80%;
+    font-weight: unset;
+    overflow-y: auto;
+    padding: 1% 2%;
+}
+
+.unban_ban_btns{
+    width: 100%;
+    height: 25%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unban_btn{
+    width: 25%;
+    height: 40%;
+    background-color: #7bed9f;
+    margin: 5%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.ban_btn{
+    width: 25%;
+    height: 40%;
+    background-color: #ff4757;
+    margin: 5%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Ban user form */
+.ban_user_form{
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.ban_user_form_title{
+    width: 100%;
+    height: 15%;
+    background-color: #000;
+    color: #f8a5c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.ban_user_form_title i{
+    margin: 2%;
+}
+
+.ban_level{
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ban_level span{
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ban_level input{
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 1%;
+    border: 2px solid #000;
+    background-color: rgba(247, 215, 148, 0.5);
+}
+
+.ban_reason{
+    width: 100%;
+    height: 45%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ban_reason span{
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ban_reason textarea{
+    width: 80%;
+    height: 70%;
+    resize: none;
+    border-radius: 15px;
+    border: 2px solid #000;
+    background-color: rgba(247, 215, 148, 0.5);
+}
+
+
+.cancel_apply_btns{
+    width: 100%;
+    height: 20%;
+    /* background-color: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancel_btn,
+.apply_btn{
+    width: 30%;
+    height: 60%;
+    margin: 5%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.cancel_btn{
+    background-color: #FF6B6B;
+}
+
+.apply_btn{
+    background-color: #5A7EFF;
+}
+
+
+/* ----------------List account admins------------ */
+
+.mgm_admin{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* display: none; */
+}
+
+.mgm_admin_table{
+    width: 100%;
+    height: 87.5%;
+    background-color: rgba(153, 153, 153, 0.8);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.mgm_admin_table table{
+    width: 100%;
+    position: relative;
+    border: 1px solid #fff;
+    
+}
+
+.mgm_admin_table table th, td{
+    text-align: center;
+    padding: 1%;
+    font-weight: 600;
+    border-collapse: collapse;
+}
+
+.mgm_admin_table table tr:nth-child(1){
+    background-color: #dfe6e9;
+    font-size: 17px;
+}
+
+.mgm_admin_table table tr:nth-child(n+2){
+    background-color: #fff;
+}
+
+.mgm_admin_table table tr:nth-child(even){
+    background-color: #FFF5C3;
+}
+
+.mgm_admin_table table tr:nth-child(n+2):hover{
+    background-color: #81ecec;
+    cursor: pointer;
+}
+
+.mgm_admin_table table tr th i{
+    color: #e74c3c;
+}
+
+
+.mgm_admin_control{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfe6e9;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.mgm_admin_control button{
+    width: 2.5%;
+    height: 60%;
+    background-color: #fff;
+    margin: 0 0.3%;
+    border-radius: 10px;
+}
+
+.mgm_admin_control button:nth-child(1){
+    color: #FF4D4D;
+}
+
+.mgm_admin_control button:nth-child(3){
+    color: #00A88A;
+}
+
+
+
+/* ----------------List banned accounts------------ */
+
+.mgm_violation{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* display: none; */
+}
+
+.mgm_violation_table{
+    width: 100%;
+    height: 87.5%;
+    background-color: rgba(153, 153, 153, 0.8);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.mgm_violation_table table{
+    width: 100%;
+    position: relative;
+    border: 1px solid #fff;
+    
+}
+
+.mgm_violation_table table th, td{
+    text-align: center;
+    padding: 1%;
+    font-weight: 600;
+    border-collapse: collapse;
+}
+
+.mgm_violation_table table tr:nth-child(1){
+    background-color: #dfe6e9;
+    font-size: 17px;
+}
+
+.mgm_violation_table table tr:nth-child(n+2){
+    background-color: #fff;
+}
+
+.mgm_violation_table table tr:nth-child(even){
+    background-color: #FFF5C3;
+}
+
+.mgm_violation_table table tr:nth-child(n+2):hover{
+    background-color: #81ecec;
+    cursor: pointer;
+}
+
+.mgm_violation_table table tr td i{
+    color: #e74c3c;
+}
+
+
+.violation_null{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    /* background: #000; */
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+.custom_accordion {
+}
+
+.accordion_header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  /* background: #000; */
+}
+
+.header {
+  font-size: 22px;
+  font-weight: 900;
+  /* background: #000;
+  border-bottom: 1px solid #000; */
+}
+
+.accordion_icon {
+  position: absolute;
+
+  left: 20px;
+  margin: 15px 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+.card_header {
+  display: flex;
+}
+
+.card_body {
+  position: relative;
+
+  padding: 0.5em 1.5em;
+  height: 50px;
+  margin-top: -50px;
+  transition: all 200ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  /* transition: visibility 0.5s opacity 0.5s ease-in-out; */
+}
+
+.accordion_active .card_body {
+  position: relative;
+  margin-top: 0px;
+  transition: all 350ms cubic-bezier(0.08, 1.09, 0.32, 1.275);
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.accordion_active .accordion_icon {
+  transform: rotate(90deg);
+}
+
+.accordion_active,
+.card {
+  position: relative;
+  /* margin: 1em 0; */
+  width: 1116px;
+  background: transparent;
+  /* background: #000; */
+  cursor: pointer;
+}
+
+.title {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 15px 0 15px 54px;
+  user-select: none;
+}

@@ -1,0 +1,98 @@
+.react-select-container {
+  position: absolute;
+  bottom: 8px;
+  /* z-index: 10; */
+  height: 5px;
+  margin-left: 1em;
+  font-size: 5px;
+}
+
+.select .react-select__control {
+  border: none;
+  box-shadow: none;
+  /* height: 5px; */
+}
+
+.revenue .react-select__control {
+  background: #c1c500;
+  height: 5px;
+}
+
+.new .react-select__control {
+  background: #930061;
+  height: 5px;
+}
+
+.completed .react-select__control {
+  background: #4785ff;
+  height: 5px;
+}
+
+.soldmonth .react-select__control {
+  background: #000;
+  height: 5px;
+}
+
+.soldmonth .react-select__control {
+  position: relative;
+  top: 30%;
+  transform: translateY(-30%);
+  margin: 0em 1em;
+}
+
+.tag .react-select__control,
+.categories .react-select__control,
+.sizes .react-select__control {
+  position: relative;
+  width: 210px;
+  top: -10px;
+  left: -5px;
+
+  /* width: 125%; */
+  /* width: 48%; */
+  height: 40%;
+  /* padding: 3%; */
+
+  border-radius: 15px;
+  background-color: #e7e7e7;
+}
+
+.best .react-select__control {
+  margin-top: 2.5em;
+}
+
+.violation .react-select__control {
+  position: relative;
+  left: -1em;
+  margin-top: 1em;
+  width: 120%;
+  height: 70%;
+  border-radius: 10px;
+  padding: 3% 5%;
+  font-size: 10px;
+  font-weight: 600;
+  background: #fdfaea;
+}
+
+.violation .react-select__menu{
+  margin-top: 2em;
+}
+
+.soldmonth .react-select__placeholder,
+.revenue .react-select__placeholder,
+.completed .react-select__placeholder,
+.new .react-select__placeholder {
+  color: #fff;
+}
+.tag .react-select__menu,
+.categories .react-select__menu,
+.sizes .react-select__menu {
+  z-index: 10;
+}
+
+.select .react-select__menu {
+  /* background: #000; */
+  margin-top: 7em;
+  z-index: 10;
+  color: #000;
+}

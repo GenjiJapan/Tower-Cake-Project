@@ -1,0 +1,294 @@
+.account {
+  position: relative;
+  /* background: red; */
+  width: 1190px;
+  height: 920px;
+  display: block;
+}
+
+.disable_account {
+  display: none;
+}
+
+.account_header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  /* background: #000; */
+  border-bottom: 3px solid #0c7d97;
+}
+
+.account_header h2 {
+  padding: 0 1em;
+}
+
+.account_info {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  top: 100px;
+  left: 65px;
+  width: 520px;
+  height: 400px;
+  /* background: #000; */
+}
+
+.input {
+  position: relative;
+  top: 0;
+  /* margin-top: 0.5em; */
+}
+
+.input input::placeholder {
+  font-size: 17px;
+}
+
+.input input {
+  margin-top: 0.5em;
+  width: 100%;
+  height: 32px;
+
+  outline: none;
+  border: none;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  background: #fff;
+  color: #666;
+  border-radius: 10px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gender span,
+.input span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.input:first-child {
+  width: 250px;
+  height: 72px;
+  /* background: #000; */
+}
+
+.input:nth-child(2) {
+  left: 1.3em;
+  width: 250px;
+  height: 72px;
+  /* background: #000; */
+}
+.input:nth-child(3) {
+  top: 0em;
+  width: 100%;
+  height: 72px;
+  /* background: #000; */
+}
+.input:nth-child(4) {
+  top: 0em;
+  width: 100%;
+  height: 72px;
+  /* background: #000; */
+}
+
+.input:nth-child(5) {
+  top: 0em;
+}
+
+.input:nth-child(6) {
+  top: 2.5em;
+  width: 100%;
+}
+
+.gender {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gender span {
+  position: absolute;
+  font-size: 18px;
+}
+
+/* label 3 */
+.remember {
+  position: relative;
+  left: 0;
+  margin-left: 2.5em;
+  width: 150px;
+}
+
+/* label 1 */
+.remember:nth-child(2) {
+  margin-left: 0em;
+}
+
+/* label 2 */
+.remember:nth-child(3) {
+  margin-left: 2.5em;
+}
+
+.remember label {
+  position: relative;
+  top: 2em;
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  color: #666;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+
+  border: none;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.remember input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.remember .checkmark {
+  position: absolute;
+  /* top: 0; */
+  left: 1.5em;
+
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.remember .checkmark::after {
+  content: "\f00c";
+  position: absolute;
+  font-family: fontAwesome;
+  font-size: 0.6em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d4a0a2;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.remember input:checked ~ .checkmark::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.user_avatar {
+  position: absolute;
+  top: 100px;
+  right: 6em;
+  width: 400px;
+  height: 400px;
+  /* background: #000; */
+  user-select: none;
+}
+
+.avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid #464646;
+  /* background: red; */
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar_change_icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 1.5em;
+  bottom: 1em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.avatar_change_icon:invalid + .icon {
+  color: #000000;
+}
+.avatar_change_icon:valid + .icon {
+  color: #ffffff;
+}
+
+.avatar_change_icon input[type="file"] {
+  display: none;
+}
+
+.account_btn {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 6em;
+  right: 0;
+  width: 520px;
+  height: 75px;
+  /* background: #000; */
+}
+
+.account_btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 250px;
+  height: 100%;
+  letter-spacing: 0.5px;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 600;
+  border-radius: 15px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cancel {
+  color: #666;
+  background: #fff;
+}
+
+.apply {
+  color: #fff;
+  background: #0c7d97;
+}
+
+.account_btn button:active {
+  color: #006c9c;
+  box-shadow: inset -5px -2px 10px rgba(255, 255, 255, 1),
+    inset 5px 2px 10px rgba(0, 0, 0, 0.1);
+}

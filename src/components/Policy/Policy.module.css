@@ -1,0 +1,58 @@
+.policy {
+  position: relative;
+  width: 90%;
+  background: #fff;
+  margin: 2em auto;
+  border-radius: 10px;
+  padding: 0.2em 1.5em;
+}
+
+.item_content:last-child {
+  margin-bottom: 1em;
+}
+
+/* .policy_item:nth-child(6) {
+  margin-bottom: 1em;
+} */
+
+.item_body {
+  display: flex;
+}
+
+.policy_title h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.policy_title h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.item_content {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: justify;
+  color: #576574;
+  line-height: 30px;
+}
+
+.item_icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 1.5em;
+  margin-top: 0.4em;
+  border-radius: 50%;
+  /* background: rgb(201, 239, 213); */
+  /* background: rgb(132, 180, 144); */
+  background: #cfd;
+}
+
+.icon {
+  font-size: 16px;
+  /* background: rgb(195, 239, 208); */
+  background: transparent;
+  background-size: cover;
+  /* color: rgb(132, 180, 144); */
+  color: #9ca;
+}

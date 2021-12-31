@@ -1,0 +1,23 @@
+.open_category {
+  display: block;
+}
+
+.disable_category {
+  display: none;
+}
+
+.open_profile {
+  display: block;
+}
+
+.disable_profile {
+  display: none;
+}
+
+.open_detail {
+  display: block;
+}
+
+.disable_detail {
+  display: none;
+}

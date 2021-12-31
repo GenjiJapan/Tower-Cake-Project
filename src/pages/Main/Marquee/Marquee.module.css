@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Dynalight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.text_rolling {
+  /* opacity: 0.1; */
+  background-color: rgba(250, 235, 215, 0.5);
+  position: relative;
+  width: 100%;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_rolling_content_border {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.text_rolling_content {
+  font-size: 40px;
+  cursor: default;
+  user-select: none;
+  text-align: center;
+  height: 100%;
+}
+
+.text_rolling_content div {
+  font-family: "Dynalight", cursive;
+  height: 100px;
+  width: 100%;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#vn {
+  font-family: "Roboto", sans-serif;
+}
